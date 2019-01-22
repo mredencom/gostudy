@@ -12,10 +12,10 @@ func main() {
 	inputReader := bufio.NewReader(os.Stdin)
 	fmt.Println("请输入你的名字:")
 	input, err := inputReader.ReadString('\n')
-	if err !=nil {
-		fmt.Printf("发现一个错误: %s\n",err)
-	}else {
+	if err != nil {
+		fmt.Printf("发现一个错误: %s\n", err)
+	} else {
 		input = input[:len(input)-1]
-		fmt.Printf("你好: %s\n",input)
+		fmt.Printf("你好: %s\n", input)
 	}
 }
