@@ -1,9 +1,13 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
 	"io"
+	"math"
+	"math/rand"
 	"net"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -12,7 +16,7 @@ import (
 //声明常量
 const (
 	SERVER_NETWORK = "tcp"
-	SERVER_ADDRESS = "127.0.0.1:8085"
+	SERVER_ADDRESS = "127.0.0.1:10000"
 	DELIMITER      = "\t"
 )
 
@@ -31,6 +35,13 @@ func printServerLog(format string, args ...interface{}) {
 
 func printClientLog(sn int, format string, args ...interface{}) {
 	printLog("Client", sn, format, args...)
+}
+
+func write(conn net.Conn, content string) (int, error) {
+	var buffer bytes.Buffer
+	buffer.WriteString(content)
+	//buffer.WriteByte(DELIMITER)
+	return conn.Write(buffer.Bytes())
 }
 func serverGo() {
 	var listener net.Listener
@@ -77,6 +88,7 @@ func handleConn(conn net.Conn) {
 			printServerLog("Sent error message (written %d bytes): %s.", n, err)
 			continue
 		}
+
 		floatResp := cbrt(intReq)
 		respMsg := fmt.Sprintf("The cube root of %d is %f.", intReq, floatResp)
 		n, err := write(conn, respMsg)
@@ -86,6 +98,80 @@ func handleConn(conn net.Conn) {
 		printServerLog("Sent response (written %d bytes): %s.", n, respMsg)
 	}
 }
-func main() {
 
+func clientGo(id int) {
+	defer wg.Done()
+	conn, err := net.DialTimeout(SERVER_NETWORK, SERVER_ADDRESS, 2*time.Second)
+	if err != nil {
+		printClientLog(id, "Dial Error: %s", err)
+		return
+	}
+	defer conn.Close()
+	printClientLog(id, "Connected to server. (remote address: %s, local address: %s)",
+		conn.RemoteAddr(), conn.LocalAddr())
+	time.Sleep(200 * time.Millisecond)
+	requestNumber := 5
+	conn.SetDeadline(time.Now().Add(5 * time.Millisecond))
+	for i := 0; i < requestNumber; i++ {
+		req := rand.Int31()
+		n, err := write(conn, fmt.Sprintf("%d", req))
+		if err != nil {
+			printClientLog(id, "Write Error: %s", err)
+			continue
+		}
+		printClientLog(id, "Sent request (written %d bytes): %d.", n, req)
+	}
+	for j := 0; j < requestNumber; j++ {
+		strResp, err := read(conn)
+		if err != nil {
+			if err == io.EOF {
+				printClientLog(id, "The connection is closed by another side.")
+			} else {
+				printClientLog(id, "Read Error: %s", err)
+			}
+			break
+		}
+		printClientLog(id, "Received response: %s.", strResp)
+	}
 }
+
+
+func read(conn net.Conn) (string, error) {
+	readBytes := make([]byte, 1)
+	var buffer bytes.Buffer
+	for {
+		_, err := conn.Read(readBytes)
+		if err != nil {
+			return "", err
+		}
+		readByte := readBytes[0]
+		if string(readByte)==DELIMITER {
+			break
+		}
+		buffer.WriteByte(readByte)
+	}
+	return buffer.String(), nil
+}
+
+func strToInt32(str string) (int32, error) {
+	num, err := strconv.ParseInt(str, 10, 0)
+	if err != nil {
+		return 0, fmt.Errorf("\"%s\" is not integer", str)
+	}
+	if num > math.MaxInt32 || num < math.MinInt32 {
+		return 0, fmt.Errorf("%d is not 32-bit integer", num)
+	}
+	return int32(num), nil
+}
+
+func cbrt(param int32) float64 {
+	return math.Cbrt(float64(param))
+}
+func main() {
+	wg.Add(2)
+	go serverGo()
+	time.Sleep(500 * time.Millisecond)
+	go clientGo(1)
+	wg.Wait()
+}
+

@@ -63,7 +63,7 @@ func chanDemo() {
 	//wg.Add(numCpu * 1000)
 	for _, worker := range workers {
 		//worker.in <- i
-		//向每一个任务加入1000条数据
+		//+向每一个任务加入1000条数据
 		for i := 0; i < 10000000; i++ {
 			//增加信号值
 			wg.Add(1)

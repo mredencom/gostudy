@@ -1,33 +1,33 @@
 package main
 
 import (
+	"fmt"
 	"runtime"
 	"sync"
+	"time"
 )
 
-func sum(ch chan int ,wg *sync.WaitGroup) {
-	//fmt.Println(arrays)
-	//sum := 0
-	//for _, array := range arrays {
-	//	sum += array
-	//}
-	for i:=0;i<10000000 ;i++  {
-		ch <- i
-		wg.Done()
+func runs(c chan int, wg *sync.WaitGroup) {
+	for i := 0; i < 1000; i++ {
+		wg.Add(1)
+		c <- i
 	}
-
 }
 
 func main() {
-	//创建信号灯(可以理解成队列)
+	t1 := time.Now().Unix()
 	var wg sync.WaitGroup
-	arrayChan := make(chan int, 20)
-	cpuNum := runtime.NumCPU()
-	for t := 0; t < cpuNum; t++ {
-		wg.Add(1)
-		go sum(arrayChan,&wg)
+	runtime.GOMAXPROCS(8) //设置cpu的核的数量，从而实现高并发
+	c := make(chan int)
+	for i := 0; i < 8; i++ {
+		go runs(c, &wg)
 	}
-	<-arrayChan
-
+	var data []int
+	for i := range c {
+		data = append(data, i)
+		wg.Done()
+	}
+	t2 := time.Now().Unix()
+	fmt.Println(t2 - t1)
 	wg.Wait()
 }
