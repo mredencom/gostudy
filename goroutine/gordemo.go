@@ -22,7 +22,7 @@ func myFunc(i interface{}) {
 }
 func main() {
 	t1 := time.Now().Unix()
-	runTimes := 40000000
+	runTimes := 10000000
 
 	// 使用普通池
 	var wg sync.WaitGroup
