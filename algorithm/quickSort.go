@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 快速排序
- */
+*/
 
 func QuickSort(nums []int, start, end int) {
 	//fmt.Print(nums)
@@ -13,7 +13,7 @@ func QuickSort(nums []int, start, end int) {
 		i, j := start, end
 		//fmt.Print((start+end)/2)
 		mid := nums[(start+end)/2]
-		for i < + j {
+		for i < +j {
 			for nums[i] < mid {
 				i++
 			}
