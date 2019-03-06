@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a9a2156-4366-495f-9e56-7d23410dab0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/https/https.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maze/maze" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maze/maze.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtimes/runtimes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/quickSort.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atomic/atomic.go" beforeDir="false" afterPath="$PROJECT_DIR$/atomic/atomic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goroutine/gordemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/gordemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/https/https.go" beforeDir="false" afterPath="$PROJECT_DIR$/https/https.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/https/https.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="297">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#14#43#0" expanded="true" />
               </folding>
@@ -34,11 +30,34 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithm/quickSort.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/software/gopath/src/github.com/gomarkdown/markdown/md/md_renderer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4455" />
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://D:/software/gopath/src/github.com/gomarkdown/markdown/html/callouts.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://D:/software/go/src/net/http/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="3031" column="70" lean-forward="true" selection-start-line="3031" selection-start-column="70" selection-end-line="3031" selection-end-column="70" />
+            <state relative-caret-position="81378">
+              <caret line="3037" column="23" selection-start-line="3037" selection-start-column="23" selection-end-line="3037" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -46,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maze/maze.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="108" column="21" lean-forward="true" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+            <state relative-caret-position="2835">
+              <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
               <folding>
                 <element signature="e#14#37#0" expanded="true" />
               </folding>
@@ -59,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/maze/maze">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -116,6 +135,7 @@
         <option value="$PROJECT_DIR$/maze/maze.in" />
         <option value="$PROJECT_DIR$/maze/maze" />
         <option value="$PROJECT_DIR$/maze/maze.go" />
+        <option value="$PROJECT_DIR$/algorithm/quickSort.go" />
       </list>
     </option>
   </component>
@@ -204,56 +224,77 @@
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="maze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="os" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="runtimes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="cgo" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="BurntSushi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="gomarkdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="gomarkdown" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="gomarkdown" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="mmarkdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;gostudy&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="mmarkdown" type="462c0819:PsiDirectoryNode" />
+              <item name="mmark" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,7 +314,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -310,20 +351,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build maze.go">
+  <component name="RunManager" selected="Go Build.go build quickSort.go">
     <configuration name="go build atomic.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gostudy" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/atomic/atomic.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build gordemo.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gostudy" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/goroutine/gordemo.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -343,6 +376,14 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build quickSort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gostudy" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/algorithm/quickSort.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build runtimes.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gostudy" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -352,19 +393,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build gordemo.go" />
       <item itemvalue="Go Build.go build atomic.go" />
       <item itemvalue="Go Build.go build runtimes.go" />
       <item itemvalue="Go Build.go build https.go" />
       <item itemvalue="Go Build.go build maze.go" />
+      <item itemvalue="Go Build.go build quickSort.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build quickSort.go" />
         <item itemvalue="Go Build.go build maze.go" />
         <item itemvalue="Go Build.go build https.go" />
         <item itemvalue="Go Build.go build runtimes.go" />
         <item itemvalue="Go Build.go build atomic.go" />
-        <item itemvalue="Go Build.go build gordemo.go" />
       </list>
     </recent_temporary>
   </component>
@@ -379,22 +420,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.17803837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" sideWeight="0.5005429" side_tool="true" weight="0.1663113" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1663113" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.46312365" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968017" weight="0.46312365" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32356134" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.36590663" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.8208955" weight="0.3626493" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.46312365" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.8198294" visible="true" weight="0.30477223" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.18017058" side_tool="true" visible="true" weight="0.30477223" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.33116177" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -462,27 +502,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="学习使用goroutine使用 ants" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/function/function.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/struct/structs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chapter2/redeclare.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chapter2/v1/simple.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1107">
@@ -754,45 +773,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/maze/maze.in" />
     <entry file="file://$PROJECT_DIR$/https/https.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="297">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#14#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maze/maze.in">
+    <entry file="file://D:/software/go/src/net/http/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maze/maze">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="81378">
+          <caret line="3037" column="23" selection-start-line="3037" selection-start-column="23" selection-end-line="3037" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maze/maze.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="108" column="21" lean-forward="true" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="2835">
+          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/go/src/net/http/server.go">
+    <entry file="file://$PROJECT_DIR$/maze/maze">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="3031" column="70" lean-forward="true" selection-start-line="3031" selection-start-column="70" selection-end-line="3031" selection-end-column="70" />
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/quickSort.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/gopath/src/github.com/gomarkdown/markdown/md/md_renderer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4455" />
+      </provider>
+    </entry>
+    <entry file="file://D:/software/gopath/src/github.com/gomarkdown/markdown/html/callouts.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162" />
       </provider>
     </entry>
   </component>
