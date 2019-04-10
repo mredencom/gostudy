@@ -17,7 +17,7 @@ var sum int32
 
 //定义一个常量域名
 //const DOMAIN = "https://sdk.mokatyper.com/games"
-const DOMAIN = "http://172.18.70.52/games"
+const DOMAIN = "http://api.ihuipao.com/mask/show?raceid=161"
 
 //const DOMAIN = "http://www.baidu.com"
 
@@ -313,7 +313,8 @@ func sendHttp() {
 		panic("错误了----------------------------------")
 	}
 	status := req.StatusCode
-	fmt.Printf("请求状态：%s\n", status)
+	fmt.Println(status)
+	//fmt.Printf("请求状态：%s\n", status)
 	//fmt.Printf(s, status, sum)
 }
 func main() {
