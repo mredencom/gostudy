@@ -42,7 +42,7 @@ func incCounterM() {
 	for count := 0; count < 2; count++ {
 		//加上锁时候同一时刻允许一个goroutine进入这个临界区
 		mutex.Lock()
-		//{
+		{
 			// 捕获 counter 的值
 			value := counterM
 			//atomic.AddInt64(&counter,1)
@@ -52,7 +52,7 @@ func incCounterM() {
 			value++
 			// 将该值保存回 counter
 			counterM = value
-		//}
+		}
 		mutex.Unlock()
 		//释放锁,允许其正在等待的goroutine进入这个临界区
 	}
