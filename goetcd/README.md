@@ -1,0 +1,1 @@
+# goetcd###简单go使用etcd 
