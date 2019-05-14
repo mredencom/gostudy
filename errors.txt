@@ -1,0 +1,5 @@
+ERROR: 2019/05/09 11:23:32 demo02.go:35: Something has failed
+ERROR: 2019/05/13 14:11:34 demo02.go:35: Something has failed
+ERROR: 2019/05/13 14:12:43 demo02.go:35: 运行失败
+WARNING: 2019/05/13 14:24:18 demo02.go:34: There is something you need to know about
+ERROR: 2019/05/13 14:24:18 demo02.go:35: 运行失败
