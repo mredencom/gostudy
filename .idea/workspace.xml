@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a9a2156-4366-495f-9e56-7d23410dab0b" name="Default Changelist" comment="学习使用goroutine使用 ants">
-      <change afterPath="$PROJECT_DIR$/image/lissajous.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/os/stdin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/point/point01.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -27,14 +26,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image/lissajous.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="e#14#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/point/point.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/point/point01.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -42,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/go/src/os/file.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="2620">
               <caret line="139" column="8" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="8" />
             </state>
           </provider>
@@ -51,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/go/src/os/file_unix.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1435">
+            <state relative-caret-position="5400">
               <caret line="276" column="8" selection-start-line="276" selection-start-column="3" selection-end-line="276" selection-end-column="8" />
             </state>
           </provider>
@@ -60,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///usr/local/go/src/io/io.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="1760">
               <caret line="90" column="9" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="9" />
             </state>
           </provider>
@@ -92,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter2/redeclare.go" />
         <option value="$PROJECT_DIR$/chapter2/v1/simple.go" />
         <option value="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
         <option value="$PROJECT_DIR$/os/process.go" />
@@ -143,6 +156,7 @@
         <option value="$PROJECT_DIR$/searchSample/main.go" />
         <option value="$PROJECT_DIR$/os/stdin.go" />
         <option value="$PROJECT_DIR$/image/lissajous.go" />
+        <option value="$PROJECT_DIR$/point/point01.go" />
       </list>
     </option>
   </component>
@@ -208,12 +222,7 @@
             <path>
               <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gostudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gostudy" type="462c0819:PsiDirectoryNode" />
-              <item name="os" type="462c0819:PsiDirectoryNode" />
+              <item name="point" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,15 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build lissajous.go">
-    <configuration name="go build commonPool.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gostudy" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/goroutine/commonPool.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build point01.go">
     <configuration name="go build gmultipleRequest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gostudy" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -307,6 +308,14 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build point01.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gostudy" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/point/point01.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build shttp.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gostudy" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -317,18 +326,18 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build shttp.go" />
-      <item itemvalue="Go Build.go build commonPool.go" />
       <item itemvalue="Go Build.go build gmultipleRequest.go" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build lissajous.go" />
+      <item itemvalue="Go Build.go build point01.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build point01.go" />
         <item itemvalue="Go Build.go build lissajous.go" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build shttp.go" />
         <item itemvalue="Go Build.go build gmultipleRequest.go" />
-        <item itemvalue="Go Build.go build commonPool.go" />
       </list>
     </recent_temporary>
   </component>
@@ -342,22 +351,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.14592275" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.14806867" />
       <window_info id="Structure" order="1" sideWeight="0.5005429" side_tool="true" weight="0.1663113" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1663113" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4946695" weight="0.31874144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4946695" visible="true" weight="0.31874144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32284543" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49840087" weight="0.3652531" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.8187633" weight="0.47058824" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.8187633" weight="0.24487004" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" weight="0.36550975" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.33116177" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -426,14 +435,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="学习使用goroutine使用 ants" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/goroutine/done.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goroutine/gor.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/exam/exam09.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -599,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/os/stdin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/go/src/image/color/color.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -637,34 +631,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/os/stdin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2620">
+          <caret line="139" column="8" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///usr/local/go/src/os/file_unix.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
+        <state relative-caret-position="5400">
           <caret line="276" column="8" selection-start-line="276" selection-start-column="3" selection-end-line="276" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/io/io.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="1760">
           <caret line="90" column="9" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/os/file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="139" column="8" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image/lissajous.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="e#14#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point/point.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/point/point01.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
