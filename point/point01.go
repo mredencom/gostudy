@@ -20,3 +20,10 @@ func incr(c *int) int {
 	*c++ //非常注意：这里的增加c指向的值，不会改变c指针
 	return *c
 }
+func init() {
+
+}
+func init() {
+
+
+}
